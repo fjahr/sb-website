@@ -18,6 +18,8 @@ body {
   position: relative;
   font-family: 'Source Sans Pro';
   font-weight: 300;
+  background: url("../bg.jpg") #002E66 no-repeat center center scroll;
+  background-position: cover;
 }
 
 video {
@@ -34,11 +36,8 @@ video {
 
 @media (pointer: coarse) and (hover: none) {
   body {
-    background: url("../img/bg-mobile-fallback.jpg") #002E66 no-repeat center center scroll;
+    background: url("../bg.jpg") #002E66 no-repeat center center scroll;
     background-position: cover;
-  }
-  body video {
-    display: none;
   }
 }
 
