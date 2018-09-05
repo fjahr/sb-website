@@ -7,7 +7,9 @@ $('#submit-form').on('click', function(e) {
     url: url,
     method: "GET",
     dataType: "json",
-    data: $form.serialize()
+    data: $form.serialize(),
+    crossOrigin: true,
+    callback: "?"
   }).done(function() {
     $("input#email-input").val("");
     $("#email-success").show();
